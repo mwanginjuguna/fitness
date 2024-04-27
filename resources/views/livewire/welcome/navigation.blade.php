@@ -1,5 +1,5 @@
 
-<nav x-data="{ open: false }" class="sticky top-0 z-50 bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="sticky top-0 z-50 bg-white dark:bg-slate-900">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
@@ -7,9 +7,9 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('home') }}" wire:navigate>
-                        <x-application-logo class="block h-9 w-auto object-cover object-center text-gray-800" />
+                        <x-application-logo class="block h-9 w-auto object-cover object-center text-slate-800 dark:text-slate-200" />
                     </a>
-                    <span class="font-bold text-orange-600 text-xs lg:text-sm">{{ config('app.name') }}</span>
+                    <span class="pl-1 font-bold text-red-600 dark:text-red-500 text-xs lg:text-sm">{{ config('app.name') }}</span>
                 </div>
 
                 <!-- Navigation Links -->
@@ -27,6 +27,7 @@
             </div>
 
             <div class="flex flex-row gap-x-4 items-center">
+                <x-utils.dark-mode-toggle />
                 <div class="hidden sm:block">
                     @auth()
                         <x-secondary-link href="{{ route('dashboard') }}" class="text-sm">Dashboard</x-secondary-link>

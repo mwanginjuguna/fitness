@@ -35,8 +35,16 @@
         }
 </script>
 </head>
-<body class="font-sans text-slate-50 antialiased bg-slate-800">
-<div class="min-h-screen flex flex-col">
+<body class="font-sans text-slate-50 antialiased bg-slate-800"
+      x-data="{ darkMode: false }"
+      x-init="
+    if (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      localStorage.setItem('darkMode', JSON.stringify(true));
+    }
+    darkMode = JSON.parse(localStorage.getItem('darkMode'));
+    $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+      x-cloak>
+<div x-bind:class="{'dark' : darkMode === true}" class="min-h-screen flex flex-col">
     @livewire('welcome.navigation')
 
     <div class="w-full">
