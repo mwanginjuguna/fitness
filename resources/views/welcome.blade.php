@@ -3,22 +3,9 @@
         {{ 'Trusted Personal Fitness Trainer' }}
     </x-slot:title>
 
-    <div class="max-w-6xl mx-auto">
-        <!-- Pr image -->
-        <!-- who you are and what you do -->
-        <!-- what can you do for me? - business -->
-        <!-- why should I listen to you? - why choose you - personal story or mission -->
-        <!-- What makes you legit - social proof - brands, media appearances, social media sites, testimonials -->
-        <!-- what do you do? - services and benefits -->
-        <!-- where do I start? clear cta and relevant to heder copy-->
-        <!-- why stick around? - link to other pages -->
-        <!-- Keep it short and sweet - Powerful and impactful -->
-
-    </div>
-
     <!-- Hero Section: Image Side with Simple Header -->
     <div
-        class="relative overflow-hidden bg-white dark:bg-gray-900 dark:text-gray-100"
+        class="relative overflow-hidden bg-slate-50 dark:bg-slate-900 dark:text-gray-100"
     >
         <!-- Hero Content -->
         <div
@@ -27,26 +14,45 @@
             <div class="lg:flex lg:w-1/2 lg:items-center">
                 <div>
                     <div
-                        class="mb-2 inline-flex rounded border border-gray-200 bg-gray-100 px-2 py-1 text-sm font-medium leading-4 text-gray-800 dark:border-gray-600/50 dark:bg-gray-700/50 dark:text-gray-200"
+                        class="mb-2 inline-flex items-center rounded border border-gray-200 bg-gray-100 px-2 py-1 text-sm font-medium leading-4 text-gray-800 dark:border-gray-600/50 dark:bg-gray-700/50 dark:text-gray-200"
                     >
-                        v6.0 Latest Version
+                        The #1 Personal Fitness Trainer in Nairobi
                     </div>
-                    <h1 class="mb-4 text-4xl font-black text-black dark:text-white">
-                        Next generation
-                        <span class="text-blue-600 dark:text-blue-500">website builder</span>
+                    <h1 class="mb-4 text-2xl md:text-4xl font-black text-black dark:text-white">
+                        Become Your Dream Body and
+                        <span class="text-red-600 text-3xl md:text-5xl dark:text-red-500">Make Your Fitness Goals Come True</span>
                     </h1>
+
                     <h2
-                        class="text-xl font-medium leading-relaxed text-gray-700 dark:text-gray-300"
+                        class="mt-3 py-1 md:text-xl font-medium leading-relaxed text-gray-700 dark:text-gray-300"
                     >
-                        Super fast and easy to use software to power your next idea or build
-                        your client’s web projects. Get it today and profit.
+                        Tired of feeling stuck in a cycle of failed diets and exercise routines?
                     </h2>
+
+                    <div class="mt-6 lg:mt-10 p-4 border-2 border-slate-300 dark:border-slate-500 rounded-lg">
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <img src="{{ asset('assets/dumbell-set.png') }}"
+                                 class="-mt-10 object-center w-full h-full" aria-roledescription="decoration" alt="">
+
+                            <div class="md:col-span-2 grid gap-y-1 text-start items-center divide-y text-slate-800 dark:text-slate-50">
+                                <p>Achieve <strong>the confidence, the body, and the energy</strong> you deserve,</p>
+                                <p class="py-1">An <strong>Adventurous Fitness journey</strong> customized to your needs, lifestyle, and goals,</p>
+                                <p class="py-1"><strong>A certified and Trusted trainer</strong> to work with you every step of the way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p
+                        class="mt-2 py-2 text-sm md:text-lg font-medium leading-relaxed text-orange-600 dark:text-orange-400"
+                    >
+                        Take the First Step To Become Your Dream Body Right Now!
+                    </p>
                     <div
                         class="flex flex-col justify-center gap-2 pb-16 pt-10 sm:flex-row sm:items-center lg:justify-start"
                     >
                         <a
                             href="javascript:void(0)"
-                            class="inline-flex items-center justify-center gap-2 rounded-lg border border-blue-700 bg-blue-700 px-7 py-3.5 font-semibold leading-6 text-white hover:border-blue-600 hover:bg-blue-600 hover:text-white focus:ring focus:ring-blue-400/50 active:border-blue-700 active:bg-blue-700 dark:focus:ring-blue-400/90"
+                            class="inline-flex items-center justify-center gap-2 rounded-lg border border-red-700 bg-red-700 px-7 py-3.5 font-semibold leading-6 text-white hover:border-red-600 hover:bg-red-600 hover:text-white focus:ring focus:ring-red-400/50 active:border-red-700 active:bg-red-700 dark:focus:ring-red-400/90"
                         >
                             <svg
                                 class="hi-mini hi-arrow-down-tray inline-block size-5 opacity-75"
@@ -62,7 +68,7 @@
                                     d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z"
                                 />
                             </svg>
-                            <span>Download for free</span>
+                            <span>Get Started</span>
                         </a>
                         <a
                             href="javascript:void(0)"
@@ -190,6 +196,18 @@
         </div>
     </div>
     <!-- END Features Section: Boxes with Icons -->
+
+    <div class="mt-6 py-10 px-4">
+        Email cnnjihiafitness@gmail.com
+        Number 0746498473
+
+        Services: personal training
+        Meal plans
+        Online training
+        Group classes/semi personal training
+        Outdoor activities/bootcamps
+        Team building
+    </div>
 
 
 </x-guest-layout>

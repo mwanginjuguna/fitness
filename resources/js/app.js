@@ -1,3 +1,5 @@
 import './bootstrap';
 
-import './utilities'
+import './utilities';
+
+import './swiper-slides';
