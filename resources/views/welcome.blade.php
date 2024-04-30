@@ -14,11 +14,11 @@
             <div class="lg:flex lg:w-1/2 lg:items-center">
                 <div>
                     <div
-                        class="mb-2 inline-flex items-center rounded border border-gray-200 bg-gray-100 px-2 py-1 text-sm font-medium leading-4 text-gray-800 dark:border-gray-600/50 dark:bg-gray-700/50 dark:text-gray-200"
+                        class="mb-2 inline-flex items-center rounded border border-gray-200 bg-gray-100 px-2 py-1 text-xs md:text-sm font-medium leading-4 text-gray-800 dark:border-gray-600/50 dark:bg-gray-700/50 dark:text-gray-200"
                     >
                         The #1 Personal Fitness Trainer in Nairobi
                     </div>
-                    <h1 class="mb-4 text-2xl md:text-4xl font-black text-black dark:text-white">
+                    <h1 class="my-4 text-2xl md:text-4xl font-black text-black dark:text-white">
                         Become Your Dream Body and
                         <span class="text-red-600 text-3xl md:text-5xl dark:text-red-500">Make Your Fitness Goals Come True</span>
                     </h1>
@@ -26,7 +26,7 @@
                     <h2
                         class="mt-3 py-1 md:text-xl font-medium leading-relaxed text-gray-700 dark:text-gray-300"
                     >
-                        Tired of feeling stuck in a cycle of failed diets and exercise routines?
+                        Tired of feeling stuck in a cycle of failed diets and exercise routines? <span class="text-orange-500">You Need A Trusted, Tested, and Certified Personal Trainer To Go With You In Your Fitness Journey.</span>
                     </h2>
 
                     <div class="mt-6 lg:mt-10 p-4 border-2 border-slate-300 dark:border-slate-500 rounded-lg">
@@ -35,7 +35,7 @@
                                  class="-mt-10 object-center w-full h-full" aria-roledescription="decoration" alt="">
 
                             <div class="md:col-span-2 grid gap-y-1 text-start items-center divide-y text-slate-800 dark:text-slate-50">
-                                <p>Achieve <strong>the confidence, the body, and the energy</strong> you deserve,</p>
+                                <p><strong>The confidence, the body, and the energy</strong> you deserve,</p>
                                 <p class="py-1">An <strong>Adventurous Fitness journey</strong> customized to your needs, lifestyle, and goals,</p>
                                 <p class="py-1"><strong>A certified and Trusted trainer</strong> to work with you every step of the way.</p>
                             </div>
@@ -110,6 +110,44 @@
         <!-- END Hero Content -->
     </div>
     <!-- END Hero Section: Image Side with Simple Header -->
+
+    <div class="max-w-7xl mx-auto px-4 py-10 md:py-16 lg:py-24">
+        <div class="hidden md:flex flex-row items-center">
+            <x-secondary-link href="javascript:void(0)" class="basis-1/3">CN Fitness</x-secondary-link>
+            <hr class="w-full">
+            <p class="basis-1/3 text-end">The best time to act is now.</p>
+        </div>
+
+        <h2 class="mt-3 max-w-xl mx-auto py-2 text-3xl md:text-4xl text-center font-bold">
+            Not Your Average Trainer <span class="text-2xl text-red-600 dark:text-red-500">Certified. Trusted. And... Passionate about your health and fitness goals</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6 py-8 items-center">
+            <video src="{{ asset('assets/cn-njihia-video.mp4') }}" controls loop autoplay muted
+                   class="h-[80vh] place-self-center w-full rounded-lg bg-gradient-to-tr from-red-200 to-orange-200 via-yellow-200 dark:from-red-700 dark:via-yellow-800 dark:to-orange-700"
+            ></video>
+
+            <div class=" grid gap-y-2">
+                <h3 class="py-1 font-bold text-2xl md:text-3xl">
+                    Someone to walk with you every step of the fitness journey
+                </h3>
+
+                <div>
+                    <p class="py-2">
+                        Hi, I'm Joseph, a certified personal fitness trainer with a <strong>passion for helping people like you, who care about their health, achieve their fitness goals</strong>.
+                        I understand the struggles of trying to balance work, family, and fitness, because I've been there too.<br><br>
+                        After years of struggling with my own weight and fitness, I discovered <strong>the power of personalized coaching</strong> and completely changed my body and life. Now, I'm dedicated to helping others do the same.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full mt-6 bg-slate-200 dark:bg-slate-800">
+        <div class="max-w-6xl mx-auto py-10 md:py-16 px-4">
+            <x-sliders.testimonials />
+        </div>
+    </div>
 
     <!-- Features Section: Boxes with Icons -->
     <div
