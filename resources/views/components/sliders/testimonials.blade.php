@@ -1,7 +1,7 @@
 <div>
     <div class="mx-auto max-w-screen-sm text-center">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold">Testimonials</h2>
-        <p class="mb-8 font-light lg:mb-16 sm:text-xl">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+        <p class="mb-8 lg:mb-16">Don't Just take my word for it. See how <strong><span class="text-orange-500">other people in your shoes have transformed their life with a reliable, trusted, and professional fitness partner.</span></strong></p>
     </div>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
