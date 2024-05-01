@@ -16,3 +16,20 @@ const swiper = new Swiper('.mySwiper', {
         prevEl: ".swiper-prev-btn"
     }
 });
+
+const benSwiper = new Swiper('.benefitSwiper', {
+    direction:"vertical",
+    autoplay: {
+        delay: 12000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+    slidesPerView: "auto",
+    centeredSlides: true,
+    autoHeight: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".benefit-swiper-next-btn",
+        prevEl: ".benefit-swiper-prev-btn"
+    }
+});

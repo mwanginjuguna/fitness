@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="w-full flex justify-between mt-1">
+        <div class="w-full flex justify-center gap-x-8 mt-1">
             <button class="swiper-prev-btn px-2 py-1 bg-slate-50 rounded-lg border-2 border-red-200 hover:border-red-500 active:border-red-500" @click="swiper.slidePrev()">
                 <svg class="w-6 h-6 text-red-600 dark:text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>

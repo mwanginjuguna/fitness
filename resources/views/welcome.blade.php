@@ -229,6 +229,12 @@
         </div>
     </section>
 
+    <section class="bg-slate-100 dark:bg-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-10 md:py-16 lg:py-24">
+            <x-sliders.benefits />
+        </div>
+    </section>
+
     <div class="mt-6 py-10 px-4">
         Email cnnjihiafitness@gmail.com
         Number 0746498473
