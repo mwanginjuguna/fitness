@@ -87,6 +87,9 @@
                     <x-slot:heading>
                         Get the benefits of personal training, with the energy and motivation of a group
                     </x-slot:heading>
+                    <x-slot:videoUrl>
+                        {{ asset('assets/group-training.mp4') }}
+                    </x-slot:videoUrl>
 
                     <x-parts.checked-list-item>
                         Work out with a small group of like-minded individuals who share your goals and challenges
@@ -107,6 +110,9 @@
                     <x-slot:heading>
                         Take your fitness into the Nature with outdoor activities and bootcamps
                     </x-slot:heading>
+                    <x-slot:videoUrl>
+                        {{ asset('assets/outdoor-training.mp4') }}
+                    </x-slot:videoUrl>
 
                     <x-parts.checked-list-item>
                         Get out of the gym and into the great outdoors, with activities like hiking, bike-riding, kayaking, and more

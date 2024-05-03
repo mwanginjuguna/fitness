@@ -9,7 +9,7 @@
     >
         <!-- Hero Content -->
         <div
-            class="container relative mx-auto flex flex-col gap-16 px-4 py-16 text-center lg:flex-row lg:gap-0 lg:px-8 lg:py-32 lg:text-left xl:max-w-7xl"
+            class="container relative mx-auto flex flex-col gap-16 px-4 py-16 text-center lg:flex-row lg:gap-0 lg:text-left xl:max-w-7xl"
         >
             <div class="lg:flex lg:w-1/2 lg:items-center">
                 <div>
@@ -51,27 +51,18 @@
                         class="flex flex-col justify-center gap-2 pb-16 pt-10 sm:flex-row sm:items-center lg:justify-start"
                     >
                         <a
-                            href="javascript:void(0)"
+                            href="#consult"
                             class="inline-flex items-center justify-center gap-2 rounded-lg border border-red-700 bg-red-700 px-7 py-3.5 font-semibold leading-6 text-white hover:border-red-600 hover:bg-red-600 hover:text-white focus:ring focus:ring-red-400/50 active:border-red-700 active:bg-red-700 dark:focus:ring-red-400/90"
                         >
-                            <svg
-                                class="hi-mini hi-arrow-down-tray inline-block size-5 opacity-75"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z"
-                                />
-                                <path
-                                    d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z"
-                                />
+                            <svg class=" inline-block size-5 opacity-75" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/>
                             </svg>
-                            <span>Get Started</span>
+
+                            <span>Book A Consultation Call Now.</span>
                         </a>
+
                         <a
-                            href="javascript:void(0)"
+                            href="#trainer"
                             class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-7 py-3.5 font-semibold leading-6 text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300/25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-transparent dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600/40 dark:active:border-gray-700"
                         >
                             <span>Learn more</span>
@@ -107,12 +98,17 @@
                 </div>
             </div>
         </div>
+        <div id="consult" class="max-w-6xl mx-auto px-4 py-6">
+            <div class="p-6 bg-slate-300 dark:bg-slate-700 rounded-xl">
+                <x-ctas.email-form />
+            </div>
+        </div>
         <!-- END Hero Content -->
     </div>
     <!-- END Hero Section: Image Side with Simple Header -->
 
     <!-- Bio Section: Image Side with an intro -->
-    <div class="max-w-7xl mx-auto px-4 py-10 md:py-16 lg:py-24">
+    <div id="trainer" class="max-w-7xl mx-auto px-4 py-10 md:py-16 lg:py-24">
         <div class="hidden md:flex flex-row items-center">
             <x-secondary-link href="javascript:void(0)" class="basis-1/3">CN Fitness</x-secondary-link>
             <hr class="w-full">
@@ -169,7 +165,7 @@
                         </span>
 
                         <div class="mt-4 md:mx-4 md:mt-0">
-                            <h1 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Strength Training and Body Building</h1>
+                            <h3 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Strength Training and Body Building</h3>
 
                             <p class="mt-3 text-slate-700 dark:text-slate-300">
                                 Become the Strongest and the Fittest, Achieve the shape, figure, and physique of your dreams with Personalized fitness programs for you.
@@ -185,7 +181,7 @@
                         </span>
 
                         <div class="mt-4 md:mx-4 md:mt-0">
-                            <h1 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Weight Loss Training</h1>
+                            <h3 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Weight Loss Training</h3>
 
                             <p class="mt-3 text-slate-700 dark:text-slate-300">
                                 Say Goodbye to scam fitness bros. Let's customize a fitness routine that will get you into shape, lose the extra kilos, and enjoy yourself while doing so.
@@ -201,7 +197,7 @@
                     </span>
 
                         <div class="mt-4 md:mx-4 md:mt-0">
-                            <h1 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Diet and Meal Planning</h1>
+                            <h3 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Diet and Meal Planning</h3>
 
                             <p class="mt-3 text-slate-700 dark:text-slate-300">
                                 Much of your fitness goals depend on what you eat. Together, we analyze your lifestyle, your goals, and what you love. Then we create a healthy meal plan you will love that meets your goals.
@@ -217,7 +213,7 @@
                     </span>
 
                         <div class="mt-4 md:mx-4 md:mt-0">
-                            <h1 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Cardio/Aerobic Workouts</h1>
+                            <h3 class="text-xl font-medium text-slate-800 capitalize dark:text-slate-100">Cardio/Aerobic Workouts</h3>
 
                             <p class="mt-3 text-slate-700 dark:text-slate-300">
                                 Fix your breathing, improve your heart-rate, Lower stress levels, Maintain a healthy weight, and increase stamina with curated cardio exercises that match your routine.
@@ -234,6 +230,26 @@
             <x-sliders.benefits />
         </div>
     </section>
+
+    <section class="w-full bg-slate-50 dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 py-10 md:py-16">
+            <div class="flex justify-between my-6 py-3 md:items-center">
+                <h2 class="mt-3 py-3 text-center text-2xl font-semibold text-slate-900 capitalize lg:text-3xl dark:text-slate-50">
+                    Read Fitness <span class="underline decoration-orange-500">Tips and Tricks</span>
+                </h2>
+
+                <x-secondary-link href="{{ route('blog') }}">Visit Blog</x-secondary-link>
+            </div>
+            <x-parts.blog-preview />
+        </div>
+
+    </section>
+
+    <div class="max-w-6xl mx-auto my-10 px-4 py-10 md:py-16">
+        <div class="p-6 md:py-12 bg-slate-300 dark:bg-slate-700 rounded-xl">
+            <x-ctas.email-form />
+        </div>
+    </div>
 
     <div class="mt-6 py-10 px-4">
         Email cnnjihiafitness@gmail.com

@@ -1,6 +1,6 @@
 @props(['svg'])
 
-<li class="flex items-center">
+<li class="flex items-center py-1 text-xs md:text-sm lg:text-base">
     @if(isset($svg))
         {{ $svg }}
     @else
