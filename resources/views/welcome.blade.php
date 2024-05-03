@@ -251,17 +251,8 @@
         </div>
     </div>
 
-    <div class="mt-6 py-10 px-4">
-        Email cnnjihiafitness@gmail.com
-        Number 0746498473
-
-        Services: personal training
-        Meal plans
-        Online training
-        Group classes/semi personal training
-        Outdoor activities/bootcamps
-        Team building
+    <div class="w-full">
+        <livewire:contact-me />
     </div>
-
 
 </x-guest-layout>

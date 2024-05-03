@@ -51,7 +51,7 @@
         {{ $slot }}
     </div>
 
-    <x-footer />
+    <x-parts.footer />
 </div>
 
 @if(config('app.env') === 'production')

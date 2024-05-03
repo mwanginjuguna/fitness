@@ -1,7 +1,10 @@
-<div>
-    <h4 class="max-w-3xl mx-auto my-2 py-2 text-slate-700 dark:text-slate-300 text-center text-lg font-semibold">
-        Schedule Your Complimentary Consultation Today and Take the First Step Towards Unlocking Your Dream Body!
+<div class="max-w-3xl mx-auto">
+    <h4 class="my-2 py-2 text-slate-700 dark:text-slate-300 text-center text-lg font-semibold">
+        Take the First Step Towards Your Real Potential Now!
     </h4>
+    <p class="pb-3 mb-4 text-center text-orange-600 dark:text-orange-300 italic">
+        Send me your Number and I will get in Touch.
+    </p>
 
     <form class="mt-4 max-w-3xl mx-auto" wire:submit="saveContact">
         <div class="grid md:grid-cols-2 md:gap-6">
