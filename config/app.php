@@ -123,4 +123,16 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    // Admin initial details
+    'admin' => [
+        'email' => env('ADMIN_EMAIL'),
+        'password' => env('ADMIN_PASSWORD')
+    ],
+
+    // google site verification code - from search.google.com/console
+    'google_site_verification' => env('GOOGLE_SITE_VERIFICATION'),
+
+    // App currency
+    'currency' => env('BASE_CURRENCY', 'USD'),
+    'currency_symbol' => env('BASE_CURRENCY_SYMBOL', '$')
 ];

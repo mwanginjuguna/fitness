@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class Discount extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'email', 'phone', 'name', 'message', 'form_used'
-    ];
+    protected $guarded = ['is_active'];
 }

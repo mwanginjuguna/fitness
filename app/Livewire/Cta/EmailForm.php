@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Cta;
 
-use App\Models\Contact;
+use App\Models\ContactMessage;
 use Livewire\Component;
 
 class EmailForm extends Component
@@ -14,7 +14,7 @@ class EmailForm extends Component
     {
         dd(['phone' => $this->phone, 'name' => $this->firstName]);
 
-        Contact::create([
+        ContactMessage::create([
             'phone' => $this->phone,
             'first_name' => $this->firstName
         ]);

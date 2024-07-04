@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Forms;
 
-use App\Models\Contact;
+use App\Models\ContactMessage;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
 
@@ -23,7 +23,7 @@ class ContactMeForm extends Form
     {
         $this->validate();
 
-        Contact::create([
+        ContactMessage::create([
             'email' => $this->email,
             'phone' => $this->phoneNumber,
             'name' => $this->name,

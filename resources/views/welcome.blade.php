@@ -88,10 +88,10 @@
                         class="absolute inset-0 -m-6 -rotate-2 rounded-xl bg-gray-200 dark:bg-gray-800"
                     ></div>
                     <div
-                        class="absolute inset-0 -m-6 rotate-1 rounded-xl bg-blue-800/75 shadow-inner dark:bg-blue-900/75"
+                        class="absolute inset-0 -m-6 rotate-1 rounded-xl bg-orange-800/75 shadow-inner dark:bg-orange-900/75"
                     ></div>
                     <img
-                        src="{{ asset('assets/cn-fitness.jpg') }}"
+                        src="{{ 'https://images.pexels.com/photos/4853298/pexels-photo-4853298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' ?? asset('assets/cn-fitness.jpg') }}"
                         class="relative mx-auto rounded-lg shadow-lg"
                         alt="Hero Image"
                     />
@@ -240,7 +240,7 @@
 
                 <x-secondary-link href="{{ route('blog') }}">Visit Blog</x-secondary-link>
             </div>
-            <x-parts.blog-preview />
+            <x-blog-preview />
         </div>
 
     </section>

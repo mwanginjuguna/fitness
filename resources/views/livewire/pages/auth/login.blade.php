@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
-new #[Layout('layouts.guest')] class extends Component
+new #[Layout('layouts.guest'), \Livewire\Attributes\Title('Login Page')] class extends Component
 {
     public LoginForm $form;
 
@@ -24,7 +24,7 @@ new #[Layout('layouts.guest')] class extends Component
     }
 }; ?>
 
-<div>
+<div class="max-w-xl mx-auto p-4 py-6 md:py-12">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 

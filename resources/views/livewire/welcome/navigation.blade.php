@@ -5,11 +5,11 @@
         <div class="flex justify-between h-16 items-center">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('home') }}" wire:navigate>
+                <div>
+                    <a href="{{ route('home') }}" class="shrink-0 flex items-center" wire:navigate>
                         <x-application-logo class="block h-9 w-auto object-cover object-center text-slate-800 dark:text-slate-200" />
+                        <span class="pl-1 font-bold text-red-600 dark:text-red-500 text-xs lg:text-sm">{{ config('app.name') }}</span>
                     </a>
-                    <span class="pl-1 font-bold text-red-600 dark:text-red-500 text-xs lg:text-sm">{{ config('app.name') }}</span>
                 </div>
 
                 <!-- Navigation Links -->
@@ -17,17 +17,48 @@
                     <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
                         {{ __('Home') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('services')" :active="request()->routeIs('services')" wire:navigate>
-                        {{ __('Services') }}
+                    <x-nav-link :href="route('products')" :active="request()->routeIs('products')" wire:navigate>
+                        {{ __('Shop') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('blog')" :active="request()->routeIs('blog')" wire:navigate>
-                        {{ __('Blog') }}
-                    </x-nav-link>
+
+                    <x-dropdown align="right" width="48">
+                        <x-slot name="trigger">
+                            <button class="inline-flex items-center gap-x-1 px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                                Resources
+
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('blog')" wire:navigate>
+                                {{ __('Blog') }}
+                            </x-dropdown-link>
+
+                            <x-dropdown-link :href="route('videos')" wire:navigate>
+                                {{ __('Videos') }}
+                            </x-dropdown-link>
+
+                            <x-dropdown-link :href="route('services')" wire:navigate>
+                                {{ __('Our Services') }}
+                            </x-dropdown-link>
+
+                            <x-dropdown-link :href="route('about')" wire:navigate>
+                                {{ __('About Us') }}
+                            </x-dropdown-link>
+
+                        </x-slot>
+                    </x-dropdown>
                 </div>
             </div>
 
             <div class="flex flex-row gap-x-4 items-center">
                 <x-utils.dark-mode-toggle />
+
+                <livewire:cart-actions />
+
                 <div class="hidden sm:block">
                     @auth()
                         <x-secondary-link href="{{ route('dashboard') }}" class="text-sm">Dashboard</x-secondary-link>
@@ -67,6 +98,7 @@
             <x-responsive-nav-link :href="route('contact-me')" :active="request()->routeIs('contact-me')" wire:navigate>
                 {{ __('Contact Me') }}
             </x-responsive-nav-link>
+
             <div class="pl-4">
                 @auth()
                     <x-secondary-link href="{{ route('dashboard') }}" class="text-sm">Dashboard</x-secondary-link>
